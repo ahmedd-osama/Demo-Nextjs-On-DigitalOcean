@@ -20,10 +20,8 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ahmed@134.209.176.120 << 'EOF'
-            cd Demo-Nextjs-On-DigitalOcean/
-            git pull origin main
-            npm install
-            npm run build
-            pm2 restart 0
+            cd Demo-Nextjs-On-DigitalOcean/ 
+            chmod +x ./deploy.sh
+            ./deploy.sh
           EOF
         shell: bash
