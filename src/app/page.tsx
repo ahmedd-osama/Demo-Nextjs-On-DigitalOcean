@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <div className="max-w-md w-full mx-auto px-4 py-8 text-center space-y-8">
-      <h1 className="text-4xl font-bold text-center">Things</h1>
+      <h1 className="text-4xl font-bold text-center">Things updated by github actions</h1>
 
       {things.length !== 0 && (
         <ul className="divide-y divide-gray-200">
