@@ -4,10 +4,10 @@
 git pull origin main
 
 # Install dependencies
-npm install
+yarn install
 
 # Build the Next.js application
-npm run build
+yarn build
 
 # Restart the application using PM2
 pm2 restart 0
