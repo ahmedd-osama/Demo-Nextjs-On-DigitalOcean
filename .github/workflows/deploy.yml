@@ -23,5 +23,6 @@ jobs:
             cd Demo-Nextjs-On-DigitalOcean/ 
             chmod +x ./deploy.sh
             ./deploy.sh
+            git restore deploy.sh
           EOF
         shell: bash
